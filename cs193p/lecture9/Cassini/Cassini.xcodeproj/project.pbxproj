@@ -14,7 +14,7 @@
 		A38A304D1B078A1E003482AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38A304B1B078A1E003482AE /* LaunchScreen.xib */; };
 		A38A30591B078A1F003482AE /* CassiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38A30581B078A1F003482AE /* CassiniTests.swift */; };
 		A38A30631B078B00003482AE /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38A30621B078B00003482AE /* ImageViewController.swift */; };
-		A38A30671B078FAB003482AE /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38A30661B078FAB003482AE /* DemoURL.swift */; };
+		A38A30AC1B07B410003482AE /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38A30AB1B07B410003482AE /* DemoURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		A38A30571B078A1F003482AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A38A30581B078A1F003482AE /* CassiniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniTests.swift; sourceTree = "<group>"; };
 		A38A30621B078B00003482AE /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		A38A30661B078FAB003482AE /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoURL.swift; path = ../../../../../../Desktop/cs193p/Cassini/Cassini/DemoURL.swift; sourceTree = "<group>"; };
+		A38A30AB1B07B410003482AE /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				A38A30441B078A1E003482AE /* ViewController.swift */,
 				A38A30461B078A1E003482AE /* Main.storyboard */,
 				A38A30621B078B00003482AE /* ImageViewController.swift */,
-				A38A30661B078FAB003482AE /* DemoURL.swift */,
+				A38A30AB1B07B410003482AE /* DemoURL.swift */,
 				A38A30401B078A1E003482AE /* Supporting Files */,
 			);
 			path = Cassini;
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A38A30671B078FAB003482AE /* DemoURL.swift in Sources */,
+				A38A30AC1B07B410003482AE /* DemoURL.swift in Sources */,
 				A38A30451B078A1E003482AE /* ViewController.swift in Sources */,
 				A38A30631B078B00003482AE /* ImageViewController.swift in Sources */,
 				A38A30431B078A1E003482AE /* AppDelegate.swift in Sources */,
@@ -419,6 +419,7 @@
 				A38A305E1B078A1F003482AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A38A305F1B078A1F003482AE /* Build configuration list for PBXNativeTarget "CassiniTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +428,7 @@
 				A38A30611B078A1F003482AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
