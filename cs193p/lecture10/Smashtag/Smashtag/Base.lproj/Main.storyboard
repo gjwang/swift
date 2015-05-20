@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tp6-Ol-4kg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tweet Table View Controller-->
+        <scene sceneID="3Kn-iN-e7E">
+            <objects>
+                <tableViewController id="rVt-Mo-EcC" customClass="TweetTableViewController" customModule="Smashtag" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="189" sectionHeaderHeight="22" sectionFooterHeight="22" id="WPN-ZW-7vK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="189" id="JGy-d6-oZw" customClass="TweetTableViewCell" customModule="Smashtag" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JGy-d6-oZw" id="Psd-wR-bT3">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhU-36-uXR">
+                                            <rect key="frame" x="64" y="8" width="528" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZg-Bu-Wl0">
+                                            <rect key="frame" x="64" y="36" width="528" height="144"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="294-RH-Hx2">
+                                            <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="GBr-mz-rtz"/>
+                                                <constraint firstAttribute="width" constant="48" id="jNR-x4-LlZ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="294-RH-Hx2" firstAttribute="leading" secondItem="Psd-wR-bT3" secondAttribute="leadingMargin" id="23H-n1-fGV"/>
+                                        <constraint firstItem="hhU-36-uXR" firstAttribute="leading" secondItem="294-RH-Hx2" secondAttribute="trailing" constant="8" symbolic="YES" id="CAM-yH-o8a"/>
+                                        <constraint firstItem="FZg-Bu-Wl0" firstAttribute="top" secondItem="hhU-36-uXR" secondAttribute="bottom" constant="8" symbolic="YES" id="E2j-qV-jDX"/>
+                                        <constraint firstItem="294-RH-Hx2" firstAttribute="top" secondItem="Psd-wR-bT3" secondAttribute="topMargin" id="QXj-7W-dAc"/>
+                                        <constraint firstItem="FZg-Bu-Wl0" firstAttribute="bottom" secondItem="Psd-wR-bT3" secondAttribute="bottomMargin" id="V0H-xt-SKj"/>
+                                        <constraint firstItem="FZg-Bu-Wl0" firstAttribute="trailing" secondItem="Psd-wR-bT3" secondAttribute="trailingMargin" id="WTr-0B-ObG"/>
+                                        <constraint firstItem="FZg-Bu-Wl0" firstAttribute="leading" secondItem="294-RH-Hx2" secondAttribute="trailing" constant="8" symbolic="YES" id="eDa-z7-FTq"/>
+                                        <constraint firstItem="hhU-36-uXR" firstAttribute="top" secondItem="Psd-wR-bT3" secondAttribute="topMargin" id="pBN-HL-78q"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hhU-36-uXR" secondAttribute="trailing" id="pzl-MQ-sjJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="tweetImageView" destination="294-RH-Hx2" id="9uW-Io-JGg"/>
+                                    <outlet property="tweetProfileImageView" destination="294-RH-Hx2" id="qZB-gB-qK6"/>
+                                    <outlet property="tweetScreenNameLabel" destination="hhU-36-uXR" id="MtC-e2-fXB"/>
+                                    <outlet property="tweetScreenNameLable" destination="294-RH-Hx2" id="yzx-tE-dUg"/>
+                                    <outlet property="tweetTextLabel" destination="FZg-Bu-Wl0" id="2lf-v6-Obo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rVt-Mo-EcC" id="c1M-dZ-PV4"/>
+                            <outlet property="delegate" destination="rVt-Mo-EcC" id="dd3-xs-0Et"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8s8-a7-rvU">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Twitter Search Query" minimumFontSize="17" id="ddR-Nw-hS9">
+                            <rect key="frame" x="16" y="7" width="568" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="twitter"/>
+                        </textField>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="IaI-TH-d0Q">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh:" destination="rVt-Mo-EcC" eventType="valueChanged" id="x2V-tw-O72"/>
+                        </connections>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="searchTextField" destination="ddR-Nw-hS9" id="Gv0-Av-BRs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rb-WE-Uyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="911"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x0U-r2-MF6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tp6-Ol-4kg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yrC-9u-erx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rVt-Mo-EcC" kind="relationship" relationship="rootViewController" id="4YX-W2-Jl3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNJ-xI-fYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="911"/>
+        </scene>
+    </scenes>
+</document>
